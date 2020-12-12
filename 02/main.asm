@@ -6,7 +6,7 @@
 .include "bluelib.inc"        ; General library with foundation stuff.
                               ; Includes memory map, help functions etc.
 .include "testlib.inc"        ; Rudimentary unit testing (depends on bluelib).
-.include "psglib.inc"         ; Stand-alone music and SFX lib (c) sverx.
+.include "PSGlib.inc"         ; Stand-alone music and SFX lib (c) sverx.
 ;
 ; - Abstraction level 2: Semi-general structs and struct-related functions.
 ;                             ; (The "Astroswab Engine").

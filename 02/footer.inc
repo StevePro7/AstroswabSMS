@@ -1029,14 +1029,14 @@
     .dw dd_revolution_tiles
   ;
   dd_revolution_tiles: ; N.B.: Both ressources point to alternative tiles!
-    .include "bank_2\dd_revolution_tiles.inc"
+    .include "bank_2/dd_revolution_tiles.inc"
     ;
   alternative_font_table:
     .dw BACKGROUND_BANK_START
     .dw CHARS_IN_ASCII_SET*BYTES_PER_TILE
     .dw dd_revolution_alternative_tiles
   dd_revolution_alternative_tiles:
-    .include "bank_2\dd_revolution_alternative_tiles.inc"
+    .include "bank_2/dd_revolution_alternative_tiles.inc"
 .ends
 ;
 .bank SPRITE_BANK slot 2
@@ -1049,7 +1049,7 @@
     .dw sprite_tiles
   ;
   sprite_tiles:
-    .include "bank_3\spritesheet.png_tiles.inc"
+    .include "bank_3/spritesheet.png_tiles.inc"
   sprite_tiles_end:
   ;
 .ends
@@ -1059,22 +1059,22 @@
 ; -----------------------------------------------------------------------------
   ;
   background_1_tiles:
-    .include "bank_4\background_1_tiles.inc"
+    .include "bank_4/background_1_tiles.inc"
   background_1_tiles_end:
   background_1_tilemap:
-    .include "bank_4\background_1_tilemap.inc"
+    .include "bank_4/background_1_tilemap.inc"
   ;
   background_2_tiles:
-    .include "bank_4\background_2_tiles.inc"
+    .include "bank_4/background_2_tiles.inc"
   background_2_tiles_end:
   background_2_tilemap:
-    .include "bank_4\background_2_tilemap.inc"
+    .include "bank_4/background_2_tilemap.inc"
   ;
   background_3_tiles:
-    .include "bank_4\background_3_tiles.inc"
+    .include "bank_4/background_3_tiles.inc"
   background_3_tiles_end:
   background_3_tilemap:
-    .include "bank_4\background_3_tilemap.inc"
+    .include "bank_4/background_3_tilemap.inc"
 .ends
 ;
 .bank BACKGROUND_BANK_2 slot 2
@@ -1083,22 +1083,22 @@
 ; -----------------------------------------------------------------------------
   ;
   background_4_tiles:
-    .include "bank_6\background_4_tiles.inc"
+    .include "bank_6/background_4_tiles.inc"
   background_4_tiles_end:
   background_4_tilemap:
-    .include "bank_6\background_4_tilemap.inc"
+    .include "bank_6/background_4_tilemap.inc"
   ;
   background_5_tiles:
-    .include "bank_6\background_5_tiles.inc"
+    .include "bank_6/background_5_tiles.inc"
   background_5_tiles_end:
   background_5_tilemap:
-    .include "bank_6\background_5_tilemap.inc"
+    .include "bank_6/background_5_tilemap.inc"
   ;
   background_6_tiles:
-    .include "bank_6\background_6_tiles.inc"
+    .include "bank_6/background_6_tiles.inc"
   background_6_tiles_end:
   background_6_tilemap:
-    .include "bank_6\background_6_tilemap.inc"
+    .include "bank_6/background_6_tilemap.inc"
 
 .ends
 .bank BACKGROUND_BANK_3 slot 2
@@ -1107,22 +1107,22 @@
 ; -----------------------------------------------------------------------------
   ;
   background_7_tiles:
-    .include "bank_7\background_7_tiles.inc"
+    .include "bank_7/background_7_tiles.inc"
   background_7_tiles_end:
   background_7_tilemap:
-    .include "bank_7\background_7_tilemap.inc"
+    .include "bank_7/background_7_tilemap.inc"
     ;
   background_8_tiles:
-    .include "bank_7\background_8_tiles.inc"
+    .include "bank_7/background_8_tiles.inc"
   background_8_tiles_end:
   background_8_tilemap:
-    .include "bank_7\background_8_tilemap.inc"
+    .include "bank_7/background_8_tilemap.inc"
     ;
   background_9_tiles:
-    .include "bank_7\background_9_tiles.inc"
+    .include "bank_7/background_9_tiles.inc"
   background_9_tiles_end:
   background_9_tilemap:
-    .include "bank_7\background_9_tilemap.inc"
+    .include "bank_7/background_9_tilemap.inc"
 .ends
 ;
 .bank BACKGROUND_BANK_4 slot 2
@@ -1131,22 +1131,22 @@
 ; -----------------------------------------------------------------------------
   ;
   background_10_tiles:
-    .include "bank_8\background_10_tiles.inc"
+    .include "bank_8/background_10_tiles.inc"
   background_10_tiles_end:
   background_10_tilemap:
-    .include "bank_8\background_10_tilemap.inc"
+    .include "bank_8/background_10_tilemap.inc"
     ;
   background_11_tiles:
-    .include "bank_8\background_11_tiles.inc"
+    .include "bank_8/background_11_tiles.inc"
   background_11_tiles_end:
   background_11_tilemap:
-    .include "bank_8\background_11_tilemap.inc"
+    .include "bank_8/background_11_tilemap.inc"
     ;
   background_12_tiles:
-    .include "bank_8\background_12_tiles.inc"
+    .include "bank_8/background_12_tiles.inc"
   background_12_tiles_end:
   background_12_tilemap:
-    .include "bank_8\background_12_tilemap.inc"
+    .include "bank_8/background_12_tilemap.inc"
     ;
 .ends
 ;
@@ -1206,10 +1206,10 @@ hiscore_init:
   .asc "   "
 ;
 hiscore_background_tiles:
-  .include "bank_9\hiscore_background_tiles.inc"
+  .include "bank_9/hiscore_background_tiles.inc"
 hiscore_background_tiles_end:
 hiscore_background_tilemap:
-  .include "bank_9\hiscore_background_tilemap.inc"
+  .include "bank_9/hiscore_background_tilemap.inc"
 hiscore_tiles_table:
   .dw NON_ASCII_AREA_START,
   .dw hiscore_background_tiles_end-hiscore_background_tiles,
@@ -1231,10 +1231,10 @@ tadaa:
 ; -----------------------------------------------------------------------------
 ;
 titlescreen_background_tiles:
-  .include "bank_10\titlescreen_background_tiles.inc"
+  .include "bank_10/titlescreen_background_tiles.inc"
 titlescreen_background_tiles_end:
 titlescreen_background_tilemap:
-  .include "bank_10\titlescreen_background_tilemap.inc"
+  .include "bank_10/titlescreen_background_tilemap.inc"
 titlescreen_background_table:
   .dw NON_ASCII_AREA_START,
   .dw titlescreen_background_tiles_end-titlescreen_background_tiles,
@@ -1262,10 +1262,10 @@ titlescreen_tilemap_table:
 ; -----------------------------------------------------------------------------
 ;
 warning_background_tiles:
-  .include "bank_3\warning_background_tiles.inc"
+  .include "bank_3/warning_background_tiles.inc"
 warning_background_tiles_end:
 warning_background_tilemap:
-  .include "bank_3\warning_background_tilemap.inc"
+  .include "bank_3/warning_background_tilemap.inc"
 warning_tiles_table:
   .dw NON_ASCII_AREA_START,
   .dw warning_background_tiles_end-warning_background_tiles,
