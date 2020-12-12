@@ -118,7 +118,7 @@ run_level:
     ld a,(transition_trigger.state)
     cp ENABLED
     jp z,+
-      ld hl,asteroid.state
+      ld hl,1
       ld b,ASTEROID_MAX
       ld de,_sizeof_game_object
       ld a,GAME_OBJECT_ACTIVE
