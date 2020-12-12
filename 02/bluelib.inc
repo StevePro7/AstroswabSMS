@@ -1145,10 +1145,10 @@
 ; E X T E N D E D  F U N C T I O N S                        (grouped in themes)
 ; =============================================================================
 ; -----------------------------------------------------------------------------
-.ramsection "extended functions variables" slot 3
+;.ramsection "extended functions variables" slot 3
 ; -----------------------------------------------------------------------------
   ;
-.ends
+;.ends
 ;
 ; -----------------------------------------------------------------------------
 .section "tilemap / name table editing" free

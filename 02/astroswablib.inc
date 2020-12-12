@@ -1414,10 +1414,10 @@ ret
 .ends
 ;
 ; -----------------------------------------------------------------------------
-.section "Empty section" free
+;.section "Empty section" free
 ; -----------------------------------------------------------------------------
   ;
-.ends
+;.ends
 ;.ramsection "Sandbox and console variables" slot 3
   ;
   ;
