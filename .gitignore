@@ -1,16 +1,17 @@
-output.sms
-*asm/*
+*.sms
+#*asm/*
 *dev/.vs/*
 *dev/*db
 *bin
 *obj
 *.vcxproj.user
-*.asm
+#*.asm
 *.lst
 *.sym
 *.ihx
 *.lk
 *.noi
+#linkfile
 
 # Prerequisites
 *.d
